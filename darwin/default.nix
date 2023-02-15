@@ -8,6 +8,8 @@
     "beekeeper-studio"
     "discord"
     "docker"
+    "firefox"
+    "google-chrome"
     "iterm2"
     "obsidian"
     "raycast"
