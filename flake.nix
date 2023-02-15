@@ -1,5 +1,5 @@
 {
-  description = "Luke's Nix packages and system configurations.";
+  description = "Adam's Nix packages and system configurations.";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";

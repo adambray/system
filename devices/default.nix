@@ -7,8 +7,8 @@ let
     {
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
-      home-manager.users.luke = import ../darwin/home;
-      users.users.luke.home = "/Users/adam";
+      home-manager.users.adam = import ../darwin/home;
+      users.users.adam.home = "/Users/adam";
     }
   ];
 in
