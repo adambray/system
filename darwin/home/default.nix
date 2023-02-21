@@ -47,7 +47,6 @@
       bungcip.better-toml
       eamodio.gitlens
       esbenp.prettier-vscode
-      github.copilot
       jakebecker.elixir-ls
       jnoortheen.nix-ide
       mkhl.direnv
@@ -86,6 +85,12 @@
         version = "1.0.5828";
         sha256 = "1myk9njk2l3r989vf6m1x7ff0ygkrpkf2i5h2ba3zczp4sp8fh6d";
       }
+      {
+        name = "zopeneditor";
+        publisher = "ibm";
+        version = "3.0.1";
+        sha256 = "734929bf485b3eb8962b9a09c9a71707cd5dd1eb3ac5174abaee94d726c1dfd2";
+      }
     ];
     userSettings = {
       "[css]" = { "editor.defaultFormatter" = "esbenp.prettier-vscode"; };
@@ -103,6 +108,7 @@
       "terminal.integrated.scrollback" = 10000;
       "vim.useSystemClipboard" = true;
       "workbench.iconTheme" = "vscode-icons";
+      "vsicons.dontShowNewVersionMessage" = true;
     };
   };
 
