@@ -8,9 +8,11 @@
   home = {
     packages = with pkgs; [
       gnupg
+      kubectl
       navi
       nixpkgs-fmt
       nodePackages.prettier
+      nodejs-18_x
     ];
 
     sessionVariables = {
@@ -109,6 +111,7 @@
       "vim.useSystemClipboard" = true;
       "workbench.iconTheme" = "vscode-icons";
       "vsicons.dontShowNewVersionMessage" = true;
+      "files.maxMemoryForLargeFilesMB" = 16384;
     };
   };
 

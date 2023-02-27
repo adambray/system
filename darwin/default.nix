@@ -12,6 +12,7 @@
     "docker"
     "firefox"
     "google-chrome"
+    "google-cloud-sdk"
     "iterm2"
     "obsidian"
     "raycast"
@@ -38,7 +39,6 @@
   system.keyboard.remapCapsLockToEscape = true;
 
   system.defaults.dock.autohide = true;
-  system.defaults.NSGlobalDomain."com.apple.swipescrolldirection" = false;
 
   system.stateVersion = 4;
 }
