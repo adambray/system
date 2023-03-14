@@ -36,7 +36,7 @@
   services.nix-daemon.enable = true;
 
   system.keyboard.enableKeyMapping = true;
-  system.keyboard.remapCapsLockToEscape = true;
+  system.keyboard.remapCapsLockToControl = true;
 
   system.defaults.dock.autohide = true;
 

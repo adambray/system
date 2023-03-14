@@ -58,12 +58,6 @@
       yzhang.markdown-all-in-one
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
-        name = "copilot-labs";
-        publisher = "github";
-        version = "0.9.668";
-        sha256 = "09pdyb844sfiz3akj3d0k6wbjb3w34j9wy7w76mkxj06a3a6f5dm";
-      }
-      {
         name = "elixir-test";
         publisher = "samuel-pordeus";
         version = "1.7.1";
