@@ -1,11 +1,8 @@
-{ additionalCasks ? [ ] }:
-
 {
   homebrew.enable = true;
   homebrew.casks = additionalCasks ++ [
     "1password-cli"
     "1password"
-    "amazon-workspaces"
     "beekeeper-studio"
     "bettertouchtool"
     "discord"
@@ -18,13 +15,13 @@
     "raycast"
     "rectangle"
     "slack"
-    "spotify"
     "zoom"
   ];
 
   nix.settings.experimental-features = [
-    "nix-command"
     "flakes"
+    "nix-command"
+    "repl-flake"
   ];
 
   nixpkgs.config.allowUnfree = true;
