@@ -1,16 +1,19 @@
 {
   homebrew.enable = true;
-  homebrew.casks = additionalCasks ++ [
+  homebrew.casks = [
     "1password-cli"
     "1password"
     "beekeeper-studio"
     "bettertouchtool"
     "discord"
+    "disk-inventory-x"
     "docker"
     "firefox"
     "google-chrome"
     "google-cloud-sdk"
+    "google-drive"
     "iterm2"
+    "keepingyouawake"
     "obsidian"
     "raycast"
     "rectangle"
