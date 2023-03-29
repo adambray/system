@@ -7,12 +7,14 @@
 
   home = {
     packages = with pkgs; [
+      elixir
       gnupg
       kubectl
       navi
       nixpkgs-fmt
       nodePackages.prettier
       nodejs-18_x
+      tree
     ];
 
     sessionVariables = {
@@ -37,6 +39,7 @@
     };
   };
 
+
   programs.neovim = {
     enable = true;
     viAlias = true;
@@ -46,6 +49,7 @@
   programs.vscode = {
     enable = true;
     extensions = with pkgs.vscode-extensions; [
+      bierner.markdown-mermaid
       bungcip.better-toml
       eamodio.gitlens
       esbenp.prettier-vscode
@@ -57,6 +61,12 @@
       vscodevim.vim
       yzhang.markdown-all-in-one
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      {
+        name = "mermaid-markdown-syntax-highlighting";
+        publisher = "bpruitt-goddard";
+        version = "1.5.1";
+        sha256 = "sha256-aC2vWmFPXAV6WYGzJ1mZIlyeKspjRb/eWVSvsXpeP8k=";
+      }
       {
         name = "elixir-test";
         publisher = "samuel-pordeus";
@@ -106,9 +116,13 @@
       "workbench.iconTheme" = "vscode-icons";
       "vsicons.dontShowNewVersionMessage" = true;
       "files.maxMemoryForLargeFilesMB" = 16384;
+      "zowe.ds.history.persistence" = true;
+      "zowe.ds.history.favorites" = [ ];
+      "zowe.ds.history.history" = [ ];
+      "zowe.ds.history.sessions" = [ ];
+      "zowe.ds.history.searchHistory" = [ ];
     };
   };
-
   programs.zsh = {
     enable = true;
     localVariables = {

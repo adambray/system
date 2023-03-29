@@ -14,10 +14,12 @@
     "google-drive"
     "iterm2"
     "keepingyouawake"
+    "keycastr"
     "obsidian"
     "raycast"
     "rectangle"
     "slack"
+    "tmux"
     "zoom"
   ];
 
