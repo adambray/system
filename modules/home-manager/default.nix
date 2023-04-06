@@ -14,7 +14,9 @@
   home = {
     packages = with pkgs; [
       elixir
+      exa
       gnupg
+      helix
       kubectl
       navi
       nixpkgs-fmt
@@ -22,7 +24,6 @@
       nodejs-18_x
       rustup
       tree
-
       vscode-update-exts
       watch
     ];

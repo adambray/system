@@ -15,12 +15,16 @@
     "iterm2"
     "keepingyouawake"
     "keycastr"
+    "nushell"
     "obsidian"
     "raycast"
     "rectangle"
     "slack"
+    "starship"
+    "warp"
+    "zellij"
     "zoom"
-  ];
+];
 
   nix.settings.experimental-features = [
     "flakes"
