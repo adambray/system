@@ -27,16 +27,7 @@
   };
 
   programs.ssh = {
-    enable = false;
-    # matchBlocks."*" = {
-    #   identityFile = "~/.ssh/id_ed25519";
-    #   extraOptions = {
-    #     AddKeysToAgent = "yes";
-    #     UseKeychain = "yes";
-    #   };
-    # };
-    controlPath = "none";
-
+    enable = true;
     matchBlocks."*" = {
       extraOptions = {
         IdentityAgent = "~/.1password/agent.sock";
