@@ -1,8 +1,8 @@
-{ darwin, flake-utils, home-manager }:
+{ darwin, flake-utils, home-manager, nixpkgs }:
 
 {
   darwinConfigurations = {
-    "Adams-Personal-MBP" = import ./personal.nix { inherit darwin flake-utils home-manager; };
-    "Adams-Work-MBP" = import ./work.nix { inherit darwin flake-utils home-manager; };
+    "Adam-Personal-MBP" = import ./personal-macbook.nix { inherit darwin flake-utils home-manager; };
+    "Adam-Work-MBP" = import ./work-macbook.nix { inherit darwin flake-utils home-manager; };
   };
 }

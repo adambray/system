@@ -19,7 +19,6 @@
     "raycast"
     "rectangle"
     "slack"
-    "tmux"
     "zoom"
   ];
 
