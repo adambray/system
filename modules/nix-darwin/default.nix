@@ -1,5 +1,12 @@
 {
   homebrew.enable = true;
+  
+  homebrew.brews = [
+    "nushell"
+    "starship"
+    "zellij"
+];
+
   homebrew.casks = [
     "1password-cli"
     "1password"
@@ -15,14 +22,11 @@
     "iterm2"
     "keepingyouawake"
     "keycastr"
-    "nushell"
     "obsidian"
     "raycast"
     "rectangle"
     "slack"
-    "starship"
     "warp"
-    "zellij"
     "zoom"
 ];
 
