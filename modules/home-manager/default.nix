@@ -37,7 +37,7 @@
       EDITOR = "nvim";
     };
 
-    stateVersion = "23.06";
+    stateVersion = "23.05";
   };
 
   programs.direnv = {

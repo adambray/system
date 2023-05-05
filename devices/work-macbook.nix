@@ -12,7 +12,7 @@ darwin.lib.darwinSystem {
         "tandem"
         "dbvisualizer"
       ];
-      home-manager.users.luke = {
+      home-manager.users.adam = {
         programs.zsh = {
           profileExtra = ''eval "$(/opt/homebrew/bin/brew shellenv)"'';
         };

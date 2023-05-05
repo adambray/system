@@ -11,8 +11,5 @@ in
       "Adams-Personal-MBP" = import ./personal-macbook.nix { inherit darwin home-manager; };
       "Adams-Work-MBP" = import ./work-macbook.nix { inherit darwin home-manager; };
     };
-    nixosConfigurations = {
-      "LukesNixosRB" = import ./nixos-laptop { inherit nixpkgs home-manager; };
-    };
   };
 }
