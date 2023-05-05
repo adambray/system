@@ -1,9 +1,11 @@
-{ self, nixpkgs, flake-utils }:
+{ inputs, ... }:
 
 let overlay = import ./overlay.nix;
 in
-{ inherit overlay; } //
-flake-utils.lib.eachDefaultSystem (system:
-  let pkgs = import nixpkgs { inherit system overlay; };
-  in { packages = overlay self pkgs; }
-)
+{
+  imports = [ inputs.flake-parts.flakeModules.easyOverlay ];
+  perSystem = { config, pkgs, self, ... }: {
+    overlayAttrs = config.packages;
+    packages = overlay self pkgs;
+  };
+}

@@ -1,12 +1,12 @@
-{
-  homebrew.enable = true;
-  
-  homebrew.brews = [
-    "nushell"
-    "starship"
-    "zellij"
-];
+{ inputs, ... }:
 
+{
+  users.users.adam.home = "/Users/adam";
+
+  home-manager.users.adam = ../home-manager;
+  home-manager.useUserPackages = true;
+
+  homebrew.enable = true;
   homebrew.casks = [
     "1password-cli"
     "1password"
@@ -28,7 +28,7 @@
     "slack"
     "warp"
     "zoom"
-];
+  ];
 
   nix.settings.experimental-features = [
     "flakes"
@@ -43,9 +43,6 @@
   security.pam.enableSudoTouchIdAuth = true;
 
   services.nix-daemon.enable = true;
-
-  system.keyboard.enableKeyMapping = true;
-  system.keyboard.remapCapsLockToControl = true;
 
   system.defaults.dock.autohide = true;
 

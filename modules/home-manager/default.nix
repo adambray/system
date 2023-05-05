@@ -13,16 +13,21 @@
 
   home = {
     packages = with pkgs; [
+      codespell
       elixir
       exa
       gnupg
       helix
+      jdk
       kubectl
+      k9s
       navi
       nixpkgs-fmt
       nodePackages.prettier
       nodejs-18_x
+      ripgrep
       rustup
+      terraform
       tree
       vscode-update-exts
       watch
@@ -32,7 +37,7 @@
       EDITOR = "nvim";
     };
 
-    stateVersion = "23.05";
+    stateVersion = "23.06";
   };
 
   programs.direnv = {
@@ -66,7 +71,6 @@
 
     plugins = with pkgs; [
       tmuxPlugins.better-mouse-mode
-      # tmuxPlugins.tpm,
       tmuxPlugins.sensible
       tmux-resurrect
       tmuxPlugins.continuum
@@ -90,7 +94,7 @@
         bind l select-pane -R
 
         # Enable RGB colour if running in xterm(1)
-        set-option -sa terminal-overrides ",xterm*:Tc"
+        # set-option -sa terminal-overrides ",xterm*:Tc"
 
         # work with upterm
         set-option -ga update-environment " UPTERM_ADMIN_SOCKET"
@@ -99,7 +103,6 @@
         set-window-option -g window-size smallest
 
         # Change the default $TERM to xterm-256color
-        set -g default-terminal "xterm-256color"
         # set -g default-terminal "xterm-256color"
 
         # No bells at all
