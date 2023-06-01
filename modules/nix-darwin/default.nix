@@ -38,8 +38,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  programs.zsh.enable = true;
-
   security.pam.enableSudoTouchIdAuth = true;
 
   services.nix-daemon.enable = true;

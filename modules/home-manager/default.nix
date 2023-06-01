@@ -201,6 +201,7 @@
           else "darwin-rebuild";
       in
       {
+        lvim = "~/.local/bin/lvim";
         update = ''
           cd ~/.system \
             && ${update-command} switch --flake . \
