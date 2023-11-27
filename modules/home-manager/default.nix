@@ -15,7 +15,7 @@
     packages = with pkgs; [
       codespell
       elixir
-      exa
+      eza
       gnupg
       helix
       jdk
