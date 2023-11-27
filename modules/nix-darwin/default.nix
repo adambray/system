@@ -16,6 +16,7 @@
     "disk-inventory-x"
     "docker"
     "firefox"
+    "finicky"
     "google-chrome"
     "google-cloud-sdk"
     "google-drive"
@@ -41,6 +42,8 @@
   security.pam.enableSudoTouchIdAuth = true;
 
   services.nix-daemon.enable = true;
+
+  programs.zsh.enable = true;
 
   system.defaults.dock.autohide = true;
 
