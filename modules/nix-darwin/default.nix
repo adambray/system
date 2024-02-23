@@ -17,6 +17,7 @@
     "docker"
     "firefox"
     "finicky"
+    "gitkraken"
     "google-chrome"
     "google-cloud-sdk"
     "google-drive"

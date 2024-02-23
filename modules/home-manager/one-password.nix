@@ -28,7 +28,8 @@
 
   programs.ssh = {
     enable = true;
-    matchBlocks."*" = {
+
+    matchBlocks."github.com" = {
       extraOptions = {
         IdentityAgent = "~/.1password/agent.sock";
       };
