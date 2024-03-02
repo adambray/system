@@ -25,6 +25,7 @@
       nixpkgs-fmt
       nodePackages.prettier
       nodejs-18_x
+      packer
       ripgrep
       rustup
       terraform
@@ -54,6 +55,12 @@
     extraConfig = {
       init = {
         defaultBranch = "main";
+      };
+      pull = {
+        rebase = true;
+      };
+      push = {
+        autoSetupRemote = true
       };
     };
   };

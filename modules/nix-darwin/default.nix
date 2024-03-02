@@ -24,6 +24,7 @@
     "iterm2"
     "keepingyouawake"
     "keycastr"
+    "meld"
     "obsidian"
     "raycast"
     "rectangle"
