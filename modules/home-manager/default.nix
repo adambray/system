@@ -60,7 +60,19 @@
         rebase = true;
       };
       push = {
-        autoSetupRemote = true
+        autoSetupRemote = true;
+      };
+      diff = {
+        algorithm = "histogram";
+      };
+      branch = {
+        sort = "committerdate";
+      };
+      rerere = {
+        enabled = true;
+      };
+      merge = {
+        conflictstyle = "zdiff3";
       };
     };
   };

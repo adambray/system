@@ -17,6 +17,7 @@
     "docker"
     "firefox"
     "finicky"
+    "flycut"
     "gitkraken"
     "google-chrome"
     "google-cloud-sdk"
