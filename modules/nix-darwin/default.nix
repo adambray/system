@@ -1,9 +1,9 @@
 { inputs, ... }:
 
 {
-  users.users.adam.home = "/Users/adam";
+  users.users.adambray.home = "/Users/adambray";
 
-  home-manager.users.adam = ../home-manager;
+  home-manager.users.adambray = ../home-manager;
   home-manager.useUserPackages = true;
 
   homebrew.enable = true;

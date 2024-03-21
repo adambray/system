@@ -8,7 +8,7 @@ in
 {
   flake = {
     darwinConfigurations = {
-      "Adams-Personal-MBP" = import ./personal-macbook.nix { inherit darwin home-manager; };
+      "midnight-air" = import ./personal-macbook.nix { inherit darwin home-manager; };
       "Adams-Work-MBP" = import ./work-macbook.nix { inherit darwin home-manager; };
     };
   };
